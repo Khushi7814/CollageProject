@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-izi - Trains</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/trains.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">   
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav>
+        <div class="nav-logo">
+            <img src="./images/logo.png" alt="Bookizi Logo">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="./hotels.html"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+                <li><a href="./flights.html"><i class="fa-solid fa-plane"></i> Flights</a></li>
+                <li><a class="active" href="#"><i class="fa-solid fa-train"></i> Trains</a></li>
+                <li><a href="./cabs.html"><i class="fa-solid fa-car"></i> Cabs</a></li>
+                <li><a href="./review.html"><i class="fa-solid fa-magnifying-glass-location"></i> Review</a></li>
+                <li><a href="./contect.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        Your Journey Begins Here
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h1>Book Train Tickets with Book-izi</h1>
+        <p>Plan your railway journey with ease. Book-izi offers convenient train ticket booking, seat availability
+            checks, and the best travel options at your fingertips.</p>
+    </section>
+
+    <!-- Train Booking Form -->
+    <div class="train-booking-form">
+        <input type="text" placeholder="Departure Station" required>
+        <input type="text" placeholder="Destination Station" required>
+        <input type="date" required>
+        <select required>
+            <option value="">Select Train Class</option>
+            <option value="sleeper">Sleeper</option>
+            <option value="ac">AC</option>
+            <option value="firstClass">First Class</option>
+        </select>
+        <input type="time" required>
+        <button type="submit">Book Ticket</button>
+    </div>
+
+    <!-- Popular Routes Section -->
+    <section class="content-section popular-routes">
+        <h2>Popular Routes</h2>
+        <ul>
+            <li>Delhi → Mumbai</li>
+            <li>Bangalore → Hyderabad</li>
+            <li>Chennai → Kolkata</li>
+            <li>Pune → Ahmedabad</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="content-section testimonials">
+        <h2>What Our Customers Say</h2>
+        <p>“Book-izi made my trip so smooth. Loved the UI!” — <strong>Ravi, Delhi</strong></p>
+        <p>“Quick booking and reliable options.” — <strong>Sneha, Bangalore</strong></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Book-izi. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        document.querySelector("button[type='submit']").addEventListener("click", function (e) {
+            const inputs = document.querySelectorAll('.train-booking-form input, .train-booking-form select');
+            for (let input of inputs) {
+                if (!input.value) {
+                    alert('Please fill all fields before submitting!');
+                    e.preventDefault();
+                    return;
+                }
+            }
+            alert('Ticket booked successfully!');
+        });
+    </script>
+</body>
+
+</html>

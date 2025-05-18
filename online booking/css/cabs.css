@@ -1,0 +1,97 @@
+@import url(./navbar.css);
+.cab-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.cab-gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.cab-gallery img:hover {
+    transform: scale(1.05);
+}
+.hero-section {
+    height: 500px;
+    width: 90%;
+    margin: 2rem auto;
+    background-image: url('../images/cabs-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.hero-section h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.info-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 2rem;
+    color: #0e2431;
+    margin-bottom: 1rem;
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Cab Booking Form */
+.cab-booking-form {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cab-booking-form input,
+.cab-booking-form select,
+.cab-booking-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cab-booking-form button {
+    background-color: #0e2431;
+    color: white;
+    cursor: pointer;
+}
+
+.cab-booking-form button:hover {
+    background-color: #f4b400;
+}
+
+footer {
+    text-align: center;
+    background-color: #0e2431;
+
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}

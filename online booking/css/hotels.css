@@ -1,0 +1,117 @@
+@import url(./navbar.css);
+.hero-section {
+    height: 500px;
+    width: 90%;
+    margin: 2rem auto;
+    background-image: url('../images/pexels-osho-1001965.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0e2431;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.hero-section h1 {
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+
+.marquee-div {
+    font-size: 2rem;
+    text-align: center;
+    color: #0e2431;
+    margin: 2rem auto;
+    font-weight: 600;
+}
+
+.carousel,
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    max-width: 90%;
+}
+
+.carousel img,
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.carousel img:hover,
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.booking-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background-color: #0e2431;
+    color: white;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #f4b400;
+}
+
+section {
+    padding: 2rem 10%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #0e2431;
+}
+
+.features,
+.rooms,
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    background-color: #0e2431;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}

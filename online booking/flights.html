@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-izi - Flights</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/flights.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav>
+        <div class="nav-logo">
+            <img src="./images/logo.png" alt="Bookizi Logo">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="./hotels.html"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+                <li><a class="active" href="#"><i class="fa-solid fa-plane"></i> Flights</a></li>
+                <li><a href="./trains.html"><i class="fa-solid fa-train"></i> Trains</a></li>
+                <li><a href="./cabs.html"><i class="fa-solid fa-car"></i> Cabs</a></li>
+                <li><a href="./review.html"><i class="fa-solid fa-magnifying-glass-location"></i> Review</a></li>
+                <li><a href="./contect.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        Fly High with Book-izi
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <h1>Book Your Flights Easily with Book-izi</h1>
+        <p>We provide the best deals and seamless booking experience for domestic and international flights. Enjoy
+            real-time availability, affordable fares, and a hassle-free booking process.</p>
+
+        <!-- Flight Search Form -->
+        <div class="flight-search-form">
+            <input type="text" placeholder="From (e.g., New York)" required>
+            <input type="text" placeholder="To (e.g., London)" required>
+            <input type="date" required>
+            <select required>
+                <option value="">Select class</option>
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First</option>
+            </select>
+            <button type="submit">Search Flights</button>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="content-section popular-destinations">
+        <h2>Popular Destinations</h2>
+        <ul>
+            <li>New Delhi → Kerla</li>
+            <li>Mumbai → Chandigharh</li>
+            <li>Bangalore → Jaipur</li>
+            <li>Hyderabad → Assam</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="content-section testimonials">
+        <h2>Traveler Testimonials</h2>
+        <p>“The flight booking was quick and smooth. Will use again!” — <strong>Anita, Mumbai</strong></p>
+        <p>“I got the best deal for my family trip!” — <strong>Rohit, Chennai</strong></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Book-izi. All rights reserved.</p>
+    </footer>
+
+    <!-- JS Script -->
+    <script>
+        document.querySelector("button[type='submit']").addEventListener("click", function (e) {
+            const inputs = document.querySelectorAll('.flight-search-form input, .flight-search-form select');
+            for (let input of inputs) {
+                if (!input.value) {
+                    alert('Please fill all fields before submitting!');
+                    e.preventDefault();
+                    return;
+                }
+            }
+            alert('Searching for flights...');
+        });
+    </script>
+</body>
+
+</html>

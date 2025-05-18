@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-izi - Hotel Booking</title>
+    <link rel="stylesheet" href="./css/hotels.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="./images/logo.png" alt="Book-izi Logo">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a class="active" href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+                <li><a href="./flights.html"><i class="fa-solid fa-plane"></i> Flights</a></li>
+                <li><a href="./trains.html"><i class="fa-solid fa-train"></i> Trains</a></li>
+                <li><a href="./cabs.html"><i class="fa-solid fa-car"></i> Cabs</a></li>
+                <li><a href="./review.html"><i class="fa-solid fa-magnifying-glass-location"></i> Review</a></li>
+                <li><a href="./contect.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero-section">
+            <h4><u>Welcome to Book-izi</h4></u></h4>
+        </div>
+
+        <div class="marquee-div">
+            <marquee>Welcome to Book-izi - Your travel partner for Hotels, Flights, Trains, and more!</marquee>
+        </div>
+
+        <div class="carousel">
+            <img src="./images/pexels-amar-saleem-15661-70441.jpg" alt="Hotel 1">
+            <img src="./images/pexels-asman-chema-91897-594077.jpg" alt="Hotel 2">
+            <img src="./images/pexels-pixabay-261395.jpg" alt="Hotel 3">
+        </div>
+
+        <div class="booking-form">
+            <input type="text" placeholder="Enter Destination" required>
+            <input type="date" required>
+            <select required>
+                <option value="">Select Room Type</option>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </div>
+
+        <section>
+            <h2>Why Choose Our Hotels</h2>
+            <div class="features">
+                <div class="card">✔️ Free Wi-Fi & High-Speed Internet</div>
+                <div class="card">✔️ In-house Restaurant & Bar</div>
+                <div class="card">✔️ Swimming Pool & Spa</div>
+                <div class="card">✔️ 24x7 Customer Support</div>
+                <div class="card">✔️ Airport Pickup Available</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Room Types</h2>
+            <div class="rooms">
+                <div class="card"><strong>Single Room</strong><br> Ideal for solo travelers, cozy with essentials.</div>
+                <div class="card"><strong>Double Room</strong><br> Perfect for couples or friends with twin beds or
+                    queen size.</div>
+                <div class="card"><strong>Suite</strong><br> Luxury space with living area, best for family stays.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Customer Reviews</h2>
+            <div class="reviews">
+                <div class="card">"Amazing service and lovely view from the room!" - Aditi K.</div>
+                <div class="card">"Booked last minute and still got everything perfect!" - Rahul S.</div>
+                <div class="card">"Super comfy beds and delicious breakfast buffet." - Meera T.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="./images/download (3).jpeg" alt="Room 1">
+                <img src="./images/download (1).jpeg" alt="Restaurant">
+                <img src="./images/download.jpeg" alt="Pool">
+                <img src="./images/download (2).jpeg" alt="Lobby">
+                <img src="./images/download (4).jpeg" alt="room 2">
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/booking.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Bookizi. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
